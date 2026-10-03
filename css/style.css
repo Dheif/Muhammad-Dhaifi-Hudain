@@ -47,7 +47,6 @@ body {
     position: relative;
     opacity: 95%;
 }
-
 .hero::before {
     content: "";
     position:absolute;
@@ -63,14 +62,17 @@ body {
     padding: 35px 40px;
     width: 440px;
 }
-
-.hero-text {
-    position: relative;
-    padding: 35px 40px;
-    width: 400px;
+.hero-text > p:first-child{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
 }
-
 .hero h1{
     font-size: 40px;
-    margin
+    margin: 10px 0;
+    color: #102858;
+}
+
+.hero h1 span{
+    color: white;
 }
