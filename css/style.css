@@ -10,34 +10,40 @@ body {
     color: #172b57;
 }
 
-/* navbar */
+/* Navbar */
 .navbar{
     height: 58px;
     background-color: white;
-    display:flex;
+    display: flex;
     align-items: center;
     padding: 0 30px;
 }
-
 .logo{
-    width: 100px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 150px;
 }
-
 .logo img{
-    width: 100px;
-    height: auto;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
     display: block;
 }
-
+.logo span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #172b57;
+}
 .nav-menu{
     display: flex;
-    gap:15px;
+    gap: 25px;
     margin: auto;
 }
 
 .nav-menu a{
     text-decoration: none;
-    color:#172b57;
+    color: #172b57;
     font-size: 14px;
 }
 
@@ -45,14 +51,21 @@ body {
     color: #147CF5;
 }
 
+.search{
+    width: 150px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .search img{
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 68-px;
     object-fit: contain;
     display: block;
 }
 
-/* hero */
+
+/* Hero */
 .hero {
     height: 280px;
     background-image: url("../img/hero dekstop beranda.jpg");
@@ -63,7 +76,7 @@ body {
 
 .hero::before {
     content: "";
-    position:absolute;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -111,23 +124,25 @@ body {
     cursor: pointer;
 }
 
-/* mood */
+
+/* Mood */
 .mood-section{
     padding: 25px 40px 10px;
 }
 
 .mood-section h2{
     font-size: 21px;
-    margin-bottom: 5px;
+    margin: 0 0 5px;
 }
 
 .section-description{
     font-size: 13px;
     color: #687998;
-    margin-top: 0;
+    margin: 0;
 }
 
-/* card mood */
+
+/* Card Mood */
 .mood-container{
     display: flex;
     gap: 20px;
@@ -135,7 +150,7 @@ body {
 }
 
 .mood-card{
-    flex:1;
+    flex: 1;
     height: 115px;
     border-radius: 16px;
     display: flex;
@@ -144,7 +159,6 @@ body {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* icon*/
 .mood-card img{
     width: 60px;
     height: 60px;
@@ -162,7 +176,8 @@ body {
     font-size: 12px;
 }
 
-/* button */
+
+/* Button Mood */
 .mood-card button{
     margin-left: auto;
     width: 40px;
@@ -174,9 +189,11 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0;
+    font-size: 16px;
 }
 
-/* mood warna */
+
+/* Mood Warna */
 .energy{
     background-color: #FFF0DD;
 }
@@ -189,31 +206,115 @@ body {
 .sad{
     background-color: #DDE8FF;
 }
+
 .sad button{
     border: 1px solid #4A91FF;
     color: #4A91FF;
 }
+
 .chill{
     background-color: #E8E0FF;
 }
+
 .chill button{
     border: 1px solid #9870FF;
     color: #9870FF;
 }
 
-/* recomende */
+
+/* Recommended */
 .recomended {
     padding: 10px 40px 30px;
 }
+
 .section-title{
     display: flex;
     align-items: center;
 }
+
 .section-title h2{
     font-size: 20px;
+    margin: 0;
 }
+
 .section-title a{
     margin-left: auto;
     text-decoration: none;
     color: #536483;
+    font-size: 13px;
+}
+
+
+/* Song Container */
+.song-container{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+
+/* Song Card */
+.song-card{
+    flex: 1;
+    height: 75px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12);
+}
+
+.song-card > img{
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.song-info{
+    margin-left: 12px;
+    min-width: 0;
+}
+
+.song-info h3{
+    font-size: 12px;
+    margin: 0 0 5px;
+    color: #172b57;
+}
+
+.song-info p{
+    font-size: 10px;
+    margin: 0 0 5px;
+    color: #687998;
+}
+
+.genre{
+    font-size: 9px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.chill-text{
+    background-color: #E8E0FF;
+    color: #7B55D9;
+}
+
+
+/* Play Button */
+.play-button{
+    margin-left: auto;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: #087FF5;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2px;
 }
