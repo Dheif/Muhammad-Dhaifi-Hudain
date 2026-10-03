@@ -45,6 +45,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    opacity: 95%;
 }
 
 .hero::before {
@@ -57,3 +58,19 @@ body {
     background-color: rgba(0, 60, 130, 0.25);
 }
 
+.hero-text {
+    position: relative;
+    padding: 35px 40px;
+    width: 440px;
+}
+
+.hero-text {
+    position: relative;
+    padding: 35px 40px;
+    width: 400px;
+}
+
+.hero h1{
+    font-size: 40px;
+    margin
+}
