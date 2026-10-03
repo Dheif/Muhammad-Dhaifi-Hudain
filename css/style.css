@@ -21,6 +21,9 @@ body {
 .logo{
     width: 100px;
 }
+.logo img{
+    width: 100%;
+}
 .nav-menu{
     display: flex;
     gap:15px;
@@ -35,7 +38,7 @@ body {
     color: #147CF5;
 }
 .search img{
-    width:95px;
+    width: 18px;
 }
 
 /* hero */
@@ -81,16 +84,16 @@ body {
 .hero button {
     background-color: #187CF2;
     color: white;
-    border-radius: 15px; /*disini atur sekira konsisten radiusnya*/
+    border-radius: 15px;
     padding: 12px 22px;
     cursor: pointer;
 }
 
 /* mood */
-.mood.section{
+.mood-section{
     padding: 25px 40px 10px;
 }
-.mood.section h2{
+.mood-section h2{
     font-size: 21px;
     margin-bottom: 5px;
 }
@@ -100,12 +103,12 @@ body {
 }
 
 /* card mood */
-.mood.container{
+.mood-container{
     display: flex;
     gap: 20px;
     margin-top: 15px;
 }
-.mood.card{
+.mood-card{
     flex:1;
     height: 115px;
     border-radius: 16px;
@@ -116,13 +119,13 @@ body {
 }
 
 /* icon*/
-.moood-card img{
+.mood-card img{
     width: 60px;
     height: 60px;
     object-fit: contain;
     margin-right: 20px;
 }
-.mood.card h3{
+.mood-card h3{
     margin: 0 0 5px;
     font-size: 19px;
 }
@@ -134,7 +137,7 @@ body {
 /* button */
 .mood-card button{
     margin-left: auto;
-    width: 130px;
+    width: 30px;
     height: 30px;
     border-radius: 50%;
     background: transparent;
@@ -154,7 +157,7 @@ body {
     background-color: #DDE8FF;
 }
 .sad button{
-    border: 1px sollid #4A91FF;
+    border: 1px solid #4A91FF;
     color: #4A91FF;
 }
 
@@ -162,7 +165,7 @@ body {
     background-color: #E8E0FF;
 }
 .chill button{
-    border: 1px sollid #9870FF;
+    border: 1px solid #9870FF;
     color: #9870FF;
 }
 
