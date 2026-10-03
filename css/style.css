@@ -109,4 +109,61 @@ body {
     flex:1;
     height: 115px;
     border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
+
+/* icon*/
+.moood-card img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.mood.card h3{
+    margin: 0 0 5px;
+    font-size: 19px;
+}
+.mood-card p{
+    margin: 0;
+    font-size: 12px;
+}
+
+/* button */
+.mood-card button{
+    margin-left: auto;
+    width: 130px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* mood warna */
+.energy{
+    background-color: #FFF0DD;
+}
+.energy button{
+    border: 1px solid #FF8A00;
+    color: #FF8A00;
+}
+
+.sad{
+    background-color: #DDE8FF;
+}
+.sad button{
+    border: 1px sollid #4A91FF;
+    color: #4A91FF;
+}
+
+.chill{
+    background-color: #E8E0FF;
+}
+.chill button{
+    border: 1px sollid #9870FF;
+    color: #9870FF;
+}
+
+/* recomende */
