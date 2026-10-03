@@ -167,3 +167,18 @@ body {
 }
 
 /* recomende */
+.recomended {
+    padding: 10px 40px 30px;
+}
+.section-title{
+    display: flex;
+    align-items: center;
+}
+.section-title h2{
+    font-size: 20px;
+}
+.section-title a{
+    margin-left: auto;
+    text-decoration: none;
+    color: #536483;
+}
