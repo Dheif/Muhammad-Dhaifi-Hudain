@@ -39,3 +39,21 @@ body {
 }
 
 /* hero */
+.hero {
+    height: 280px;
+    background-image: url("../img/hero dekstop beranda.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 60, 130, 0.25);
+}
+
