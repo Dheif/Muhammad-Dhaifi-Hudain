@@ -72,15 +72,5 @@ const songs = [
     },
 ];
 
-console.log(songs[0].artist);
-console.log(songs[1].title);
-console.log(songs[2].title);
-console.log(songs[3].title);
-console.log(songs[4].artist);
-console.log(songs[5].title);
-console.log(songs[6].title);
-console.log(songs[7].title);
-console.log(songs[8].artist);
-console.log(songs[9].title);
 
 
