@@ -1,4 +1,4 @@
-//kumpulan data lagu
+//kumpulan data music
 const songs = [
     {
         title:"Armageddon",
