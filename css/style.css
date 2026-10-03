@@ -76,3 +76,18 @@ body {
 .hero h1 span{
     color: white;
 }
+
+.hero-description {
+    color: #102858;
+    font-size: 13px
+}
+
+.hero button {
+    background-color: #187CF2;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+/* mood */
