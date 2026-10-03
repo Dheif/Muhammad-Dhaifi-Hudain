@@ -56,7 +56,6 @@ body {
     height: 100%;
     background-color: rgba(0, 60, 130, 0.25);
 }
-
 .hero-text {
     position: relative;
     padding: 35px 40px;
@@ -72,22 +71,42 @@ body {
     margin: 10px 0;
     color: #102858;
 }
-
 .hero h1 span{
     color: white;
 }
-
 .hero-description {
     color: #102858;
     font-size: 13px
 }
-
 .hero button {
     background-color: #187CF2;
     color: white;
-    border-radius: 8px;
+    border-radius: 15px; /*disini atur sekira konsisten radiusnya*/
     padding: 12px 22px;
     cursor: pointer;
 }
 
 /* mood */
+.mood.section{
+    padding: 25px 40px 10px;
+}
+.mood.section h2{
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+.section-description{
+    font-size: 13px;
+    color: #687998;
+}
+
+/* card mood */
+.mood.container{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+.mood.card{
+    flex:1;
+    height: 115px;
+    border-radius: 16px;
+}
