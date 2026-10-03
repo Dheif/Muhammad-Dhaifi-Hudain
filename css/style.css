@@ -189,16 +189,13 @@ body {
 .sad{
     background-color: #DDE8FF;
 }
-
 .sad button{
     border: 1px solid #4A91FF;
     color: #4A91FF;
 }
-
 .chill{
     background-color: #E8E0FF;
 }
-
 .chill button{
     border: 1px solid #9870FF;
     color: #9870FF;
@@ -208,16 +205,13 @@ body {
 .recomended {
     padding: 10px 40px 30px;
 }
-
 .section-title{
     display: flex;
     align-items: center;
 }
-
 .section-title h2{
     font-size: 20px;
 }
-
 .section-title a{
     margin-left: auto;
     text-decoration: none;
