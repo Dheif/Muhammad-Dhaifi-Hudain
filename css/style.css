@@ -1,1 +1,13 @@
+/* Umum */
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    background-color: #EAF1FF;
+    font-family: Arial, sans-serif;
+    color: #172b57;
+}
+
+/* navbar */
