@@ -1,17 +1,25 @@
 const songContainer = document.getElementById("song-container");
-const recommendedTitle = document.getElementById("recommended-title");
+const recommendedTitle = document.getElementById("recomended-title");
 const moodCards = document.querySelectorAll(".mood-card");
 
-// Menampilkan Lagu
+
+// ========================================
+// MENAMPILKAN LAGU
+// ========================================
+
 function showSongs(mood) {
 
     // Bersihkan card sebelumnya
     songContainer.innerHTML = "";
 
+
     // Ambil lagu berdasarkan mood
-    const filteredSongs = songs.filter(song => {
-        return song.mood.toLowerCase() === mood.toLowerCase();
-    }).slice(0, 3);
+    const filteredSongs = songs
+        .filter(song => {
+            return song.mood.toLowerCase() === mood.toLowerCase();
+        })
+        .slice(0, 3);
+
 
     // Kalau tidak ada lagu
     if (filteredSongs.length === 0) {
@@ -25,11 +33,15 @@ function showSongs(mood) {
         return;
     }
 
-    // Buat card lagu
+
+    // ========================================
+    // BUAT CARD LAGU
+    // ========================================
+
     filteredSongs.forEach(song => {
 
-        // Cari index lagu
         const songIndex = songs.indexOf(song);
+
 
         songContainer.innerHTML += `
             <div class="song-card">
@@ -67,17 +79,38 @@ function showSongs(mood) {
         `;
     });
 
-    // Tombol Play
-    const playButtons = document.querySelectorAll(".play-button");
+
+    // ========================================
+    // TOMBOL PLAY
+    // ========================================
+
+    const playButtons =
+        document.querySelectorAll(".play-button");
+
 
     playButtons.forEach(button => {
 
         button.addEventListener("click", function () {
 
-            const songIndex = this.dataset.index;
+            const songIndex =
+                parseInt(this.dataset.index);
 
-            localStorage.setItem("selectedSong", songIndex);
 
+            // Simpan lagu yang dipilih
+            localStorage.setItem(
+                "selectedSong",
+                songIndex
+            );
+
+
+            // Tandai bahwa lagu dipilih dari Home
+            sessionStorage.setItem(
+                "autoplaySong",
+                "true"
+            );
+
+
+            // Pindah ke Player
             window.location.href = "player.html";
 
         });
@@ -87,36 +120,59 @@ function showSongs(mood) {
 }
 
 
-// Klik Mood
+// ========================================
+// KLIK MOOD
+// ========================================
+
 moodCards.forEach(card => {
 
     card.addEventListener("click", function () {
 
-        // Ambil mood dari data-mood
-        const selectedMood = this.dataset.mood;
+        const selectedMood =
+            this.dataset.mood;
+
 
         // Tampilkan lagu
         showSongs(selectedMood);
 
+
         // Ubah judul Recommended
         recommendedTitle.textContent =
             selectedMood + " Songs";
+
+
+        // Hapus active dari semua card
+        moodCards.forEach(item => {
+            item.classList.remove("active");
+        });
+
+
+        // Aktifkan card yang dipilih
+        this.classList.add("active");
 
     });
 
 });
 
 
-// Sesuai desain Figma,
-// Home pertama kali menampilkan lagu Chill.
+// ========================================
+// DEFAULT
+// ========================================
+
+// Pertama kali buka Home
+// tampilkan Chill
 showSongs("Chill");
 
 
-// Card Chill aktif saat pertama dibuka
-const defaultMood = document.querySelector(
-    '.mood-card[data-mood="Chill"]'
-);
+// Card Chill aktif
+const defaultMood =
+    document.querySelector(
+        '.mood-card[data-mood="Chill"]'
+    );
+
 
 if (defaultMood) {
+
     defaultMood.classList.add("active");
+
 }

@@ -1,8 +1,4 @@
-/* ========================================
-   PLAYER MUSIC
-======================================== */
-
-// Ambil elemen HTML
+//  elemen HTML
 const audio = document.getElementById("audio-player");
 
 const cover = document.getElementById("player-cover");
@@ -23,11 +19,6 @@ const durationText = document.getElementById("duration");
 
 const volumeBar = document.getElementById("volume-bar");
 const volumeIcon = document.getElementById("volume-icon");
-
-
-// ========================================
-// CURRENT SONG
-// ========================================
 
 // Default lagu
 let currentSongIndex = 10;
@@ -122,6 +113,7 @@ function loadSong(index) {
 // ========================================
 // PLAY SONG
 // ========================================
+
 function playSong() {
     audio.play();
     playIcon.src = "../img/pause.png";
