@@ -2,7 +2,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     background-color: #EAF1FF;
@@ -14,7 +13,11 @@ body {
 .hamburger {
     display: none;
 }
-/* HOME */
+
+
+
+
+                                                            /* HOME */
 /* Navbar */
 .navbar{
     height: 58px;
@@ -323,7 +326,7 @@ body {
     color: #7B55D9;
 }
 
-/* EXPLORE */
+                                                                /* EXPLORE */
 .explore-section{
     padding: 35px 40px 30px; 
 }
@@ -454,10 +457,9 @@ body {
     height: 35px;
     object-fit: contain;
 }
-/* ========================================
-   PLAYER
-======================================== */
 
+
+                                                            /* PLAYER */
 .player-page {
     min-height: calc(100vh - 58px);
 
@@ -551,11 +553,7 @@ body {
     background-color: rgba(201, 222, 250, 0.55);
     z-index: 1;
 }
-
-/* ========================================
-   COVER
-======================================== */
-
+/* cover */
 .player-cover {
     position: relative;
 
@@ -568,11 +566,7 @@ body {
 
     z-index: 2;
 }
-
-
-/* ========================================
-   SONG INFO
-======================================== */
+/* ingfo music */
 
 .player-info {
     position: relative;
@@ -616,11 +610,7 @@ body {
 
     font-size: 11px;
 }
-
-
-/* ========================================
-   PROGRESS AREA
-======================================== */
+/* Progres area */
 
 .progress-area {
     position: relative;
@@ -631,7 +621,6 @@ body {
 
     z-index: 3;
 }
-
 
 /* Progress bar */
 .progress-bar {
@@ -648,7 +637,6 @@ body {
     cursor: pointer;
 }
 
-
 /* Waktu lagu */
 .time {
     display: flex;
@@ -661,11 +649,7 @@ body {
     color: #687998;
 }
 
-
-/* ========================================
-   PLAYER CONTROLS
-======================================== */
-
+/* play control */
 .player-controls {
     position: relative;
 
@@ -680,11 +664,7 @@ body {
 
     z-index: 3;
 }
-
-
-/* ========================================
-   PREVIOUS / NEXT
-======================================== */
+/* next and prev */
 
 .control-button {
     width: 42px;
@@ -712,10 +692,7 @@ body {
     display: block;
 }
 
-
-/* ========================================
-   PLAY / PAUSE
-======================================== */
+/* pause and play */
 
 .play-button-main {
     width: 76px;
@@ -734,7 +711,7 @@ body {
 }
 
 
-/* Icon pause / play */
+/* Icon pause and play */
 .play-button-main img {
     width: 80px;
     height: 80px;
@@ -742,11 +719,7 @@ body {
     display: block;
 }
 
-
-/* ========================================
-   VOLUME
-======================================== */
-
+/* volume */
 .volume-area {
     position: relative;
     display: flex;
