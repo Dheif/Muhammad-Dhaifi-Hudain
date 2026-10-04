@@ -10,6 +10,7 @@ body {
     color: #172b57;
 }
 
+/* HOME */
 /* Navbar */
 .navbar{
     height: 58px;
@@ -289,15 +290,10 @@ body {
         transform 0.2s ease,
         box-shadow 0.2s ease;
 }
-
 .mood-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
-
-
-/* Jangan sampai klik tombol terasa seperti
-   elemen yang berbeda dari card */
 .mood-card button {
     pointer-events: none;
 }
@@ -322,3 +318,5 @@ body {
     background-color: #E8E0FF;
     color: #7B55D9;
 }
+
+/* EXPLORE */
