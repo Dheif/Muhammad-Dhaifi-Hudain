@@ -2,22 +2,16 @@ const songContainer = document.getElementById("song-container");
 const recommendedTitle = document.getElementById("recommended-title");
 const moodCards = document.querySelectorAll(".mood-card");
 
-
-// ========================================
-// MENAMPILKAN LAGU
-// ========================================
-
+// Menampilkan Lagu
 function showSongs(mood) {
 
     // Bersihkan card sebelumnya
     songContainer.innerHTML = "";
 
-
     // Ambil lagu berdasarkan mood
     const filteredSongs = songs.filter(song => {
         return song.mood.toLowerCase() === mood.toLowerCase();
     });
-
 
     // Kalau tidak ada lagu
     if (filteredSongs.length === 0) {
@@ -27,32 +21,21 @@ function showSongs(mood) {
                 No songs found for this mood.
             </p>
         `;
-
-        return;
-    }
-
-
+        return;}
     // Buat card lagu
     filteredSongs.forEach(song => {
-
         songContainer.innerHTML += `
             <div class="song-card">
-
                 <img
                     src="${song.cover}"
                     alt="${song.title}"
                 >
-
                 <div class="song-info">
-
                     <h3>${song.title}</h3>
-
                     <p>${song.artist}</p>
-
                     <span class="genre ${song.mood.toLowerCase()}-text">
                         ${song.mood}
                     </span>
-
                 </div>
 
                 <button
@@ -65,7 +48,6 @@ function showSongs(mood) {
                         alt="Play"
                     >
                 </button>
-
             </div>
         `;
     });
@@ -73,20 +55,15 @@ function showSongs(mood) {
 
 // Klik Mood
 moodCards.forEach(card => {
-
     card.addEventListener("click", function () {
         // Ambil mood dari data-mood
         const selectedMood = this.dataset.mood;
-
         // Tampilkan lagu
         showSongs(selectedMood);
-
         // Ubah judul Recommended
         recommendedTitle.textContent =
             selectedMood + " Songs";
-
     });
-
 });
 
 // Sesuai desain Figma,
