@@ -1,6 +1,3 @@
-/* ========================================
-   PLAYER MUSIC
-======================================== */
 
 // Ambil elemen HTML
 const audio = document.getElementById("audio-player");
