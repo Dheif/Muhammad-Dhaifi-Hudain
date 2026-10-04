@@ -9,12 +9,6 @@ body {
     color: #172b57;
 }
 
-/* Hamburger */
-.hamburger {
-    display: none;
-}
-
-                                                            /* HOME */
 /* Navbar */
 .navbar{
     height: 58px;
@@ -23,6 +17,12 @@ body {
     align-items: center;
     padding: 0 30px;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -64,6 +64,13 @@ body {
     object-fit: contain;
     display: block;
 }
+
+/* Hamburger */
+.hamburger {
+    display: none;
+}
+
+                                                            /* HOME */
 
 /* Hero */
 .hero {
@@ -323,7 +330,7 @@ body {
     color: #7B55D9;
 }
 
-                                                                /* EXPLORE */
+                                                                     /* EXPLORE */
 .explore-section{
     padding: 35px 40px 30px; 
 }
@@ -459,56 +466,39 @@ body {
                                                             /* PLAYER */
 .player-page {
     min-height: calc(100vh - 58px);
-
     background-color: #EAF1FF;
-
     position: relative;
-
     overflow: hidden;
 }
 
 
 /* back button */
-
 .back-button {
     position: absolute;
-
     top: 45px;
     left: 25px;
-
     width: 28px;
     height: 28px;
-
     z-index: 10;
 }
-
 .back-button img {
     width: 28px;
     height: 28px;
     object-fit: contain;
     display: block;
-
 }
 
-
 /* Player content*/
-
 .player-content {
     position: relative;
-
     width: 100%;
     min-height: calc(100vh - 58px);
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding-top: 108px;
 }
-
-
 /* BG Lingkaran
-
 /* Lingkaran luar */
 .player-content::before {
     content: "";
@@ -522,7 +512,6 @@ body {
     background-color: rgba(255, 255, 255, 0.42);
     z-index: 0;
 }
-
 
 /* Lingkaran dalam */
 .player-content::after {
@@ -553,14 +542,10 @@ body {
 /* cover */
 .player-cover {
     position: relative;
-
     width: 185px;
     height: 185px;
-
     object-fit: cover;
-
     border-radius: 16px;
-
     z-index: 2;
 }
 /* ingfo music */
@@ -568,54 +553,39 @@ body {
 .player-info {
     position: relative;
     text-align: center;
-
     margin-top: 18px;
-
     z-index: 2;
 }
 
 .player-info h1 {
     margin: 0;
-
     font-size: 25px;
     line-height: 30px;
-
     font-weight: 700;
-
     color: #000;
 }
 
 .player-info p {
     margin: 4px 0 8px;
-
     font-size: 15px;
     line-height: 18px;
-
     color: #687998;
 }
 
 .player-info span {
     display: inline-block;
-
     padding: 4px 13px;
-
     border-radius: 12px;
-
     background-color: #CAE4FF; 
-
     color: #4A91FF;
-
     font-size: 11px;
 }
 /* Progres area */
-
 .progress-area {
     position: relative;
-
     width: 550px;
 
     margin-top: 47px;
-
     z-index: 3;
 }
 
@@ -628,21 +598,15 @@ body {
     padding: 0;
 
     display: block;
-
     accent-color: #2784F2;
-
     cursor: pointer;
 }
-
 /* Waktu lagu */
 .time {
     display: flex;
-
     justify-content: space-between;
-
     margin-top: 7px;
     font-size: 12px;
-
     color: #687998;
 }
 
