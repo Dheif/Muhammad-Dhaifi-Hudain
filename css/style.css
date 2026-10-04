@@ -168,7 +168,6 @@ body {
     font-size: 16px;
 }
 
-
 /* Mood Warna */
 .energy{
     background-color: #FFF0DD;
@@ -297,20 +296,11 @@ body {
 }
 
 
-/* Mood yang sedang dipilih */
-.mood-card.active {
-    box-shadow:
-        0 0 0 2px rgba(23, 43, 87, 0.12),
-        0 5px 10px rgba(0, 0, 0, 0.15);
-}
-
 /* Jangan sampai klik tombol terasa seperti
    elemen yang berbeda dari card */
-
 .mood-card button {
     pointer-events: none;
 }
-
 
 /* Kalau tidak ada lagu */
 .no-songs {

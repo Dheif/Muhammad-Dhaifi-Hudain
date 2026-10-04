@@ -85,14 +85,6 @@ moodCards.forEach(card => {
         recommendedTitle.textContent =
             selectedMood + " Songs";
 
-        // Hapus active dari semua card
-        moodCards.forEach(item => {
-            item.classList.remove("active");
-        });
-
-        // Tambahkan active ke card yang dipilih
-        this.classList.add("active");
-
     });
 
 });
