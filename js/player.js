@@ -52,8 +52,37 @@ function formatTime(seconds) {
         .padStart(2, "0")}`;
 }
 
-// local song
+// function song-song
 function loadSong(index) {
+    const song = songs[index];
+    if (!song) {
+        return;
+    }
+
+    // Informasi lagu
+    title.textContent = song.title;
+    artist.textContent = song.artist;
+    mood.textContent = song.mood;
+
+    // Cover
+    cover.src = song.cover;
+    cover.alt = song.title;
+
+    // Audio
+    audio.src = song.audio;
+    audio.load();
+
+    // Reset progress
+    progressBar.value = 0;
+    currentTimeText.textContent = "0:00";
+    durationText.textContent = "0:00";
+
+    // Icon kembali ke play
+    playIcon.src = "../img/play.png";
+    playIcon.alt = "Play";
+}
+
+function (index) {
     const song = songs[index];
     if (!song) {
         return;
