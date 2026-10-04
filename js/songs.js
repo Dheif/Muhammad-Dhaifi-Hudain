@@ -69,14 +69,6 @@ const songs = [
         mood:"Chill",
         cover:"../cover/style.jpg",
         audio:"../music/style.mp3"
-    },
-
-    {
-        title:"None",
-        artist:"Pilih Lagu Terlebih Dahulu",
-        mood:"",
-        cover:"../cover/Cover Default.jpg",
-        audio:""
     }
 ];
 

@@ -1,4 +1,3 @@
-
 // Ambil elemen HTML
 const audio = document.getElementById("audio-player");
 
@@ -21,13 +20,19 @@ const durationText = document.getElementById("duration");
 const volumeBar = document.getElementById("volume-bar");
 const volumeIcon = document.getElementById("volume-icon");
 
-
-// Default lagu
-let currentSongIndex = 10;
-
 // Kalau ada lagu yang dikirim dari halaman lain
 // melalui localStorage
 const savedSong = localStorage.getItem("selectedSong");
+if (savedSong === null) {
+
+    cover.src = "../cover/Cover Default.jpg";
+    cover.alt = "No song selected";
+
+    title.textContent = "None";
+    artist.textContent = "Buka lagu terlebih dahulu";
+    mood.textContent = "";
+
+}
 if (savedSong !== null) {
     currentSongIndex = parseInt(savedSong);
 }
@@ -52,37 +57,8 @@ function formatTime(seconds) {
         .padStart(2, "0")}`;
 }
 
-// function song-song
+// local song
 function loadSong(index) {
-    const song = songs[index];
-    if (!song) {
-        return;
-    }
-
-    // Informasi lagu
-    title.textContent = song.title;
-    artist.textContent = song.artist;
-    mood.textContent = song.mood;
-
-    // Cover
-    cover.src = song.cover;
-    cover.alt = song.title;
-
-    // Audio
-    audio.src = song.audio;
-    audio.load();
-
-    // Reset progress
-    progressBar.value = 0;
-    currentTimeText.textContent = "0:00";
-    durationText.textContent = "0:00";
-
-    // Icon kembali ke play
-    playIcon.src = "../img/play.png";
-    playIcon.alt = "Play";
-}
-
-function (index) {
     const song = songs[index];
     if (!song) {
         return;
@@ -196,9 +172,7 @@ function nextSong() {
 
 // previous
 function previousSong() {
-
     currentSongIndex--;
-
     // Kalau berada di lagu pertama
     // kembali ke lagu terakhir
     if (currentSongIndex < 0) {
@@ -216,7 +190,6 @@ function previousSong() {
 // next button
 nextButton.addEventListener("click", function () {
     nextSong();
-
 });
 
 // prev button
@@ -248,10 +221,10 @@ volumeBar.addEventListener("input", function () {
 
 });
 
-// load lagu pertama
+// Load lagu
 loadSong(currentSongIndex);
 
-// hapus local storage saat pengguna menutup browser
+// hapus local storage
 window.addEventListener("beforeunload", function () {
     localStorage.removeItem("selectedSong");
 });
