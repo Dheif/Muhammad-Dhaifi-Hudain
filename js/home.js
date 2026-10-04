@@ -71,12 +71,7 @@ function showSongs(mood) {
     });
 }
 
-
-
-// ========================================
-// KLIK MOOD
-// ========================================
-
+// Klik Mood
 moodCards.forEach(card => {
 
     card.addEventListener("click", function () {
@@ -102,11 +97,9 @@ moodCards.forEach(card => {
 
 });
 
-
 // Sesuai desain Figma,
 // Home pertama kali menampilkan lagu Chill.
 showSongs("Chill");
-
 
 // Card Chill aktif saat pertama dibuka
 const defaultMood = document.querySelector(

@@ -32,7 +32,7 @@ const songs = [
         title:"Young And Beautiful",
         artist:"Lana Del Rey",
         mood:"Sad",
-        cover:"../cover/Yound And Beautiful.jpg",
+        cover:"../cover/Young And Beautiful.jpg",
         audio:"../music/young and beautiful.mp3"
     },
     {

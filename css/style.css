@@ -282,3 +282,53 @@ body {
     height: 45px;
     object-fit: contain;
 }
+
+/* Mood active */
+.mood-card {
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.mood-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Mood yang sedang dipilih */
+.mood-card.active {
+    box-shadow:
+        0 0 0 2px rgba(23, 43, 87, 0.12),
+        0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Jangan sampai klik tombol terasa seperti
+   elemen yang berbeda dari card */
+
+.mood-card button {
+    pointer-events: none;
+}
+
+
+/* Kalau tidak ada lagu */
+.no-songs {
+    color: #687998;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+/* Warna Genre */
+.energy-text {
+    background-color: #FFF0DD;
+    color: #FF8A00;
+}
+.sad-text {
+    background-color: #DDE8FF;
+    color: #4A91FF;
+}
+.chill-text {
+    background-color: #E8E0FF;
+    color: #7B55D9;
+}
