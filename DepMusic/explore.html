@@ -28,14 +28,14 @@
     </nav>
 
     <!-- section  -->
-    <section>
-        <div>
+    <section class="explore-section">
+        <div class="explore-title">
             <h1>Explore Music</h1>
             <p>Find Your next favorite song.</p>
         </div>
     <!-- search -->
-        <div>
-            <img src="" alt="">
+        <div class="search-box">
+            <img src="../img/Kaca_pembesar.png" alt="Search">
 
             <input 
             type="text"
@@ -44,7 +44,7 @@
         </div>
 
         <!-- filter mood -->
-        <div>
+        <div class="mood-filter">
             <button class="filter-button active" data-mood="All">
                 All
             </button>
@@ -60,17 +60,18 @@
         </div>
 
         <!-- All music -->
-        <section>
-            <div>
+        <section class="explore-songs">
+            <div class="section-title">
                 <h2>All Songs</h2>
             </div>
-            <div>
+            <div class="explore-song-container" id="explore-song-container">
 
             </div>
         </section>
     </section>
     
     <script src="../js/songs.js"></script>
+    <script src="../js/explore.js"></script>
 
 </body>
 </html>
