@@ -54,8 +54,8 @@ body {
     justify-content: flex-end;
 }
 .search img{
-    width: 80px;
-    height: 80-px;
+    width: 100px;
+    height: 100-px;
     object-fit: contain;
     display: block;
 }
