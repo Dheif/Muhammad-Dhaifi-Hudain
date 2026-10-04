@@ -21,26 +21,40 @@ function showSongs(mood) {
                 No songs found for this mood.
             </p>
         `;
-        return;}
+
+        return;
+    }
+
     // Buat card lagu
     filteredSongs.forEach(song => {
+
+        // Cari index lagu
+        const songIndex = songs.indexOf(song);
+
         songContainer.innerHTML += `
             <div class="song-card">
+
                 <img
                     src="${song.cover}"
                     alt="${song.title}"
                 >
+
                 <div class="song-info">
+
                     <h3>${song.title}</h3>
+
                     <p>${song.artist}</p>
+
                     <span class="genre ${song.mood.toLowerCase()}-text">
                         ${song.mood}
                     </span>
+
                 </div>
 
                 <button
                     class="play-button"
                     type="button"
+                    data-index="${songIndex}"
                     aria-label="Play ${song.title}"
                 >
                     <img
@@ -48,27 +62,55 @@ function showSongs(mood) {
                         alt="Play"
                     >
                 </button>
+
             </div>
         `;
     });
+
+    // Tombol Play
+    const playButtons = document.querySelectorAll(".play-button");
+
+    playButtons.forEach(button => {
+
+        button.addEventListener("click", function () {
+
+            const songIndex = this.dataset.index;
+
+            localStorage.setItem("selectedSong", songIndex);
+
+            window.location.href = "player.html";
+
+        });
+
+    });
+
 }
+
 
 // Klik Mood
 moodCards.forEach(card => {
+
     card.addEventListener("click", function () {
+
         // Ambil mood dari data-mood
         const selectedMood = this.dataset.mood;
+
         // Tampilkan lagu
         showSongs(selectedMood);
+
         // Ubah judul Recommended
         recommendedTitle.textContent =
             selectedMood + " Songs";
+
     });
+
 });
+
 
 // Sesuai desain Figma,
 // Home pertama kali menampilkan lagu Chill.
 showSongs("Chill");
+
 
 // Card Chill aktif saat pertama dibuka
 const defaultMood = document.querySelector(

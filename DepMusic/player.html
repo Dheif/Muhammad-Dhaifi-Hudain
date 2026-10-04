@@ -8,8 +8,6 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mobile.css">
-    <script src="../js/songs.js"></script>
-    <script src="../js/player.js"></script>
 
 </head>
 
@@ -51,20 +49,23 @@
             <img 
                 id="player-cover"
                 class="player-cover"
-                src="../cover/Cinnamon girl.jpg"
-                alt="Cinnamon Girl"
+                src=""
+                alt=""
             >
             <!-- Informasi lagu -->
             <div class="player-info">
-                <h1>Cinnamon Girl</h1>
-                <p>Lana Del Rey</p>
-                <span>Sad</span>
+                <h1 id="player-title"></h1>
+                <p id="player-artist"></p>
+                <span id="player-mood"></span>
             </div>
 
+            <!--audio -->
+            <audio id="audio-player"></audio>
             <!-- Progress lagu -->
             <div class="progress-area">
 
                 <input 
+                    id="progress-bar"
                     type="range"
                     class="progress-bar"
                     min="0"
@@ -73,23 +74,23 @@
                 >
 
                 <div class="time">
-                    <span>1:02</span>
-                    <span>4:57</span>
+                    <span id="current-time">0:00</span>
+                    <span id="duration">0:00</span>
                 </div>
 
             </div>
             <!-- Tombol player -->
             <div class="player-controls">
-
-                <button class="control-button">
+                <!-- previous -->
+                <button id="previous-button" class="control-button">
                     <img src="../img/previous.png" alt="Previous">
                 </button>
-
-                <button class="play-button-main">
-                    <img src="../img/pause.png" alt="Pause">
+                <!--play & pause-->
+                <button id="play-button" class="play-button-main">
+                    <img id="play-icon" src="../img/pause.png" alt="Pause">
                 </button>
-
-                <button class="control-button">
+                <!-- next -->
+                <button id="next-button" class="control-button">
                     <img src="../img/next.png" alt="Next">
                 </button>
 
@@ -99,11 +100,13 @@
             <div class="volume-area">
 
                 <img 
+                    id="volume-icon"
                     class="volume-icon"
                     src="../img/speaker.png"
                     alt="Volume"
                 >
                 <input 
+                    id="volume-bar"
                     type="range"
                     class="volume-bar"
                     min="0"
@@ -113,4 +116,7 @@
             </div>
         </div>
     </main>
+    <script src="../js/songs.js"></script>
+    <script src="../js/player.js"></script>
 </body>
+</html>

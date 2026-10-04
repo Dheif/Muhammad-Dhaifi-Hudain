@@ -70,7 +70,7 @@ a{
     display: none;
 }
 
-                                                            /* HOME */
+                                                        /* HOME */
 
 /* Hero */
 .hero {
@@ -463,14 +463,13 @@ a{
 }
 
 
-                                                            /* PLAYER */
+                                                         /* PLAYER */
 .player-page {
     min-height: calc(100vh - 58px);
     background-color: #EAF1FF;
     position: relative;
     overflow: hidden;
 }
-
 
 /* back button */
 .back-button {
@@ -549,14 +548,12 @@ a{
     z-index: 2;
 }
 /* ingfo music */
-
 .player-info {
     position: relative;
     text-align: center;
     margin-top: 18px;
     z-index: 2;
 }
-
 .player-info h1 {
     margin: 0;
     font-size: 25px;
@@ -564,14 +561,12 @@ a{
     font-weight: 700;
     color: #000;
 }
-
 .player-info p {
     margin: 4px 0 8px;
     font-size: 15px;
     line-height: 18px;
     color: #687998;
 }
-
 .player-info span {
     display: inline-block;
     padding: 4px 13px;
@@ -588,7 +583,6 @@ a{
     margin-top: 47px;
     z-index: 3;
 }
-
 /* Progress bar */
 .progress-bar {
     width: 100%;
@@ -613,43 +607,30 @@ a{
 /* play control */
 .player-controls {
     position: relative;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     gap: 42px;
-
     margin-top: 7px;
-
     z-index: 3;
 }
 /* next and prev */
-
 .control-button {
     width: 42px;
     height: 42px;
-
     padding: 0;
-
     border: none;
-
     background: transparent;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
 }
 
 .control-button img {
     width: 42px;
     height: 42px;
-
     object-fit: contain;
-
     display: block;
 }
 
@@ -658,19 +639,14 @@ a{
 .play-button-main {
     width: 76px;
     height: 76px;
-
     padding: 0;
     border: none;
     border-radius: 50%;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
 }
-
 
 /* Icon pause and play */
 .play-button-main img {
