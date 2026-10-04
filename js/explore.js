@@ -1,9 +1,13 @@
 const exploreSongContainer = document.getElementById(
     "explore-song-container"
-)
+);
+
+// Menampilkan lagu
 function showExploreSongs(songList) {
     exploreSongContainer.innerHTML = "";
     songList.forEach(song => {
+        // Cari index lagu dari songs.js
+        const songIndex = songs.indexOf(song);
         exploreSongContainer.innerHTML += `
             <div class="explore-song-card">
                 <img
@@ -20,6 +24,8 @@ function showExploreSongs(songList) {
                 <button
                     class="explore-play-button"
                     type="button"
+                    data-index="${songIndex}"
+                    aria-label="Play ${song.title}"
                 >
                     <img
                         src="../img/play.png"
@@ -29,17 +35,39 @@ function showExploreSongs(songList) {
             </div>
         `;
     });
+    
+    // tombol play
+    const playButtons = document.querySelectorAll(
+        ".explore-play-button"
+    );
+    playButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Ambil index lagu
+            const songIndex = this.dataset.index;
+            // Simpan lagu yang dipilih
+            localStorage.setItem(
+                "selectedSong",
+                songIndex
+            );
+            // Pindah ke halaman Player
+            window.location.href = "player.html";
+        });
+    });
 }
 
+// tampilkan semua lagu (All
 showExploreSongs(songs);
-
-// filter modd
-const filterButtons = document.querySelectorAll(".filter-button");
+// filter mood
+const filterButtons = document.querySelectorAll(
+    ".filter-button"
+);
 filterButtons.forEach(button => {
     button.addEventListener("click", function () {
         // Ambil mood dari tombol
         const selectedMood = this.dataset.mood;
-        // All
+        // ======================================
+        // ALL
+        // ========================================
         if (selectedMood === "All") {
             showExploreSongs(songs);
         } else {
@@ -50,11 +78,10 @@ filterButtons.forEach(button => {
             });
             showExploreSongs(filteredSongs);
         }
-        // Hapus active dari semua tombol
+        // Button active
         filterButtons.forEach(item => {
             item.classList.remove("active");
         });
-        // Tambahkan active ke tombol yang dipilih
         this.classList.add("active");
     });
 });
