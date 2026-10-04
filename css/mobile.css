@@ -1,5 +1,5 @@
 
-/* CSS Home*/
+/* HOME*/
 .hamburger {
     display: none;
 }
@@ -192,11 +192,8 @@
         width: 42px;
         height: 42px;
     }
-}
 
-
-/* Explore */
-@media (max-width: 768px) {
+/* EXPLORE */
     /* Explore Section */
     .explore-section {
         padding: 18px 22px 30px;
@@ -371,6 +368,313 @@
         height: 38px;
     }
 
-}
+/* PLAYER*/
+    .player-page {
+        min-height: calc(100vh - 46px);
+        height: calc(100vh - 46px);
 
-/* Player */
+        background-color: #EAF1FF;
+
+        position: relative;
+        overflow: hidden;
+    }
+/* back button */
+    .back-button {
+        top: 18px;
+        left: 12px;
+
+        width: 22px;
+        height: 22px;
+
+        z-index: 10;
+    }
+
+    .back-button img {
+        width: 22px;
+        height: 22px;
+
+        object-fit: contain;
+        display: block;
+    }
+
+
+/* player content */
+    .player-content {
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 46px);
+        min-height: calc(100vh - 46px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 147px;
+    }
+
+
+    /*LINGKARAN LUAR*/
+    .player-content::before {
+        content: "";
+
+        position: absolute;
+
+        width: 400px;
+        height: 400px;
+
+        top: 0.5px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        border-radius: 50%;
+
+        background-color: rgba(255, 255, 255, 0.42);
+
+        z-index: 0;
+    }
+
+
+    /*LINGKARAN TENGAH*/
+    .player-content::after {
+        content: "";
+
+        position: absolute;
+
+        width: 310px;
+        height: 310px;
+
+        top: 45.5px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        border-radius: 50%;
+
+        background-color: rgba(215, 231, 252, 0.70);
+
+        z-index: 0;
+    }
+
+
+    /*LINGKARAN PALING DALAM*/
+    .inner-circle {
+        position: absolute;
+
+        width: 150px;
+        height: 150px;
+
+        top: 125.5px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        border-radius: 50%;
+
+        background-color: rgba(201, 222, 250, 0.55);
+
+        z-index: 1;
+    }
+/* Cover */
+    .player-cover {
+        position: relative;
+
+        width: 105px;
+        height: 105px;
+
+        object-fit: cover;
+
+        border-radius: 11px;
+
+        z-index: 2;
+    }
+
+/* info music */
+    .player-info {
+        position: relative;
+
+        text-align: center;
+
+        margin-top: 7px;
+
+        z-index: 2;
+    }
+
+    .player-info h1 {
+        margin: 0;
+
+        font-size: 18px;
+        line-height: 22px;
+
+        font-weight: 700;
+
+        color: #000;
+    }
+
+    .player-info p {
+        margin: 2px 0 6px;
+
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #687998;
+    }
+
+    .player-info span {
+        display: inline-block;
+
+        padding: 3px 10px;
+
+        border-radius: 10px;
+
+        background-color: #CAE4FF;
+
+        color: #4A91FF;
+
+        font-size: 9px;
+    }
+/* Progres area */
+
+    .progress-area {
+        position: relative;
+
+        width: calc(100% - 56px);
+        max-width: 430px;
+
+        margin-top: 51px;
+
+        z-index: 3;
+    }
+/* Prores bar */
+    .progress-bar {
+        width: 100%;
+        height: 4px;
+
+        margin: 0;
+        padding: 0;
+
+        display: block;
+
+        accent-color: #2784F2;
+
+        cursor: pointer;
+    }
+
+
+    /* Waktu */
+
+    .time {
+        display: flex;
+
+        justify-content: space-between;
+
+        margin-top: 5px;
+
+        font-size: 9px;
+
+        color: #687998;
+    }
+/* player control */
+
+    .player-controls {
+        position: relative;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 25px;
+
+        margin-top: 7px;
+
+        z-index: 3;
+    }
+/* Previous & next */
+
+    .control-button {
+        width: 28px;
+        height: 28px;
+
+        padding: 0;
+
+        border: none;
+
+        background: transparent;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+    }
+
+    .control-button img {
+        width: 28px;
+        height: 28px;
+
+        object-fit: contain;
+
+        display: block;
+    }
+
+
+/* play & pause */
+    .play-button-main {
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+    }
+
+    .play-button-main img {
+        width: 48px;
+        height: 48px;
+
+        object-fit: contain;
+
+        display: block;
+    }
+
+/* Volume */
+
+    .volume-area {
+        position: relative;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 7px;
+
+        margin-top: 15px;
+
+        z-index: 3;
+    }
+
+    .volume-icon {
+        width: 13px;
+        height: 13px;
+
+        object-fit: contain;
+
+        display: block;
+    }
+
+    .volume-bar {
+        width: 98px;
+        height: 4px;
+
+        margin: 0;
+        padding: 0;
+
+        accent-color: #2784F2;
+
+        cursor: pointer;
+    }
+}
