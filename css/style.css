@@ -321,10 +321,13 @@ body {
 
 /* EXPLORE */
 .explore-section{
-    padding: 35px 40px 30px; 
+    padding: 5px 40px 30px; 
+}
+.explore-section h1{
+    font-size: 40px;
 }
 .explore-title h3{
-    font-size: 28px;
+    font-size: 20px;
     margin: 0 0 5px;
 }
 .explore-title p{
