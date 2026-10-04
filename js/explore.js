@@ -31,5 +31,25 @@ function showExploreSongs(songList) {
     });
 }
 
-
 showExploreSongs(songs);
+
+// filter modd
+const filterButtons = document.querySelectorAll(".filter-button");
+filterButtons.forEach(button => {
+    button.addEventListener("click", function () {
+        // Ambil mood dari tombol
+        const selectedMood = this.dataset.mood;
+        // All
+        if (selectedMood === "All") {
+            showExploreSongs(songs);
+        } else {
+            // Cari lagu berdasarkan mood
+            const filteredSongs = songs.filter(song => {
+                return song.mood.toLowerCase() ===
+                       selectedMood.toLowerCase();
+            });
+            showExploreSongs(filteredSongs);
+        }
+
+    });
+});
