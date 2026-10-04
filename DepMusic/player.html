@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Player</title>
+
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
 </head>
+
 <body>
+
     <!-- Navigasi -->
     <nav class="navbar">
         <div class="logo">
             <img src="../img/logo_depmusic.png" alt="DepMusic">
-                <span>DepMusic</span>
+            <span>DepMusic</span>
         </div>
+
         <div class="nav-menu">
             <a href="home.html">Home</a>
             <a href="explore.html">Explore</a>
             <a href="player.html" class="active">Player</a>
         </div>
+
         <div class="search">
             <img src="../img/Kaca_pembesar.png" alt="Search">
         </div>
@@ -25,5 +32,88 @@
         <button class="hamburger" type="button">☰</button>
     </nav>
 
+
+    <!-- PLAYER -->
+    <main class="player-page">
+        <!-- Tombol kembali -->
+        <a href="home.html" class="back-button">
+            <img src="../img/back.png" alt="Back">
+        </a>
+
+        <div class="player-content">
+            <div class="inner-circle"></div>
+            <!-- Cover lagu -->
+            <img 
+                class="player-cover"
+                src="../cover/Cinnamon girl.jpg"
+                alt="Cinnamon Girl"
+            >
+            <!-- Informasi lagu -->
+            <div class="player-info">
+                <h1>Cinnamon Girl</h1>
+                <p>Lana Del Rey</p>
+                <span>Sad</span>
+            </div>
+
+            <!-- Progress lagu -->
+            <div class="progress-area">
+
+                <input 
+                    type="range"
+                    class="progress-bar"
+                    min="0"
+                    max="100"
+                    value="20"
+                >
+
+                <div class="time">
+                    <span>1:02</span>
+                    <span>4:57</span>
+                </div>
+
+            </div>
+            <!-- Tombol player -->
+            <div class="player-controls">
+
+                <button class="control-button">
+                    <img src="../img/previous.png" alt="Previous">
+                </button>
+
+                <button class="play-button-main">
+                    <img src="../img/pause.png" alt="Pause">
+                </button>
+
+                <button class="control-button">
+                    <img src="../img/next.png" alt="Next">
+                </button>
+
+            </div>
+
+            <!-- Volume -->
+            <div class="volume-area">
+
+                <img 
+                    class="volume-icon"
+                    src="../img/speaker.png"
+                    alt="Volume"
+                >
+
+                <input 
+                    type="range"
+                    class="volume-bar"
+                    min="0"
+                    max="100"
+                    value="80"
+                >
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/songs.js"></script>
+    <script src="../js/player.js"></script>
+
 </body>
-</html>

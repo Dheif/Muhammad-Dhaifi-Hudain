@@ -10,6 +10,10 @@ body {
     color: #172b57;
 }
 
+/* Hamburger */
+.hamburger {
+    display: none;
+}
 /* HOME */
 /* Navbar */
 .navbar{
@@ -449,4 +453,327 @@ body {
     width: 35px;
     height: 35px;
     object-fit: contain;
+}
+/* ========================================
+   PLAYER
+======================================== */
+
+.player-page {
+    min-height: calc(100vh - 58px);
+
+    background-color: #EAF1FF;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* back button */
+
+.back-button {
+    position: absolute;
+
+    top: 45px;
+    left: 25px;
+
+    width: 28px;
+    height: 28px;
+
+    z-index: 10;
+}
+
+.back-button img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+
+}
+
+
+/* Player content*/
+
+.player-content {
+    position: relative;
+
+    width: 100%;
+    min-height: calc(100vh - 58px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 108px;
+}
+
+
+/* BG Lingkaran
+
+/* Lingkaran luar */
+.player-content::before {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    top: -124.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.42);
+    z-index: 0;
+}
+
+
+/* Lingkaran dalam */
+.player-content::after {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    top: -59.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: rgba(215, 231, 252, 0.70);
+    z-index: 0;
+}
+
+/*Lingkaran paling dalam*/
+.inner-circle {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: 70.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: rgba(201, 222, 250, 0.55);
+    z-index: 1;
+}
+
+/* ========================================
+   COVER
+======================================== */
+
+.player-cover {
+    position: relative;
+
+    width: 185px;
+    height: 185px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    z-index: 2;
+}
+
+
+/* ========================================
+   SONG INFO
+======================================== */
+
+.player-info {
+    position: relative;
+    text-align: center;
+
+    margin-top: 18px;
+
+    z-index: 2;
+}
+
+.player-info h1 {
+    margin: 0;
+
+    font-size: 25px;
+    line-height: 30px;
+
+    font-weight: 700;
+
+    color: #000;
+}
+
+.player-info p {
+    margin: 4px 0 8px;
+
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #687998;
+}
+
+.player-info span {
+    display: inline-block;
+
+    padding: 4px 13px;
+
+    border-radius: 12px;
+
+    background-color: #CAE4FF; 
+
+    color: #4A91FF;
+
+    font-size: 11px;
+}
+
+
+/* ========================================
+   PROGRESS AREA
+======================================== */
+
+.progress-area {
+    position: relative;
+
+    width: 550px;
+
+    margin-top: 47px;
+
+    z-index: 3;
+}
+
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    height: 5px;
+
+    margin: 0;
+    padding: 0;
+
+    display: block;
+
+    accent-color: #2784F2;
+
+    cursor: pointer;
+}
+
+
+/* Waktu lagu */
+.time {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 7px;
+    font-size: 12px;
+
+    color: #687998;
+}
+
+
+/* ========================================
+   PLAYER CONTROLS
+======================================== */
+
+.player-controls {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 42px;
+
+    margin-top: 7px;
+
+    z-index: 3;
+}
+
+
+/* ========================================
+   PREVIOUS / NEXT
+======================================== */
+
+.control-button {
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.control-button img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* ========================================
+   PLAY / PAUSE
+======================================== */
+
+.play-button-main {
+    width: 76px;
+    height: 76px;
+
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+/* Icon pause / play */
+.play-button-main img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ========================================
+   VOLUME
+======================================== */
+
+.volume-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    z-index: 3;
+}
+
+
+.volume-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+
+    display: block;
+}
+
+
+.volume-bar {
+    width: 210px;
+    height: 5px;
+
+    margin: 0;
+    padding: 0;
+
+    accent-color: #2784F2;
+
+    cursor: pointer;
 }
