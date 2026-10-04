@@ -11,7 +11,7 @@ function showSongs(mood) {
     // Ambil lagu berdasarkan mood
     const filteredSongs = songs.filter(song => {
         return song.mood.toLowerCase() === mood.toLowerCase();
-    });
+    }).slice(0, 3);
 
     // Kalau tidak ada lagu
     if (filteredSongs.length === 0) {
