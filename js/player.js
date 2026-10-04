@@ -1,6 +1,5 @@
 // Ambil elemen HTML
 const audio = document.getElementById("audio-player");
-
 const cover = document.getElementById("player-cover");
 const title = document.getElementById("player-title");
 const artist = document.getElementById("player-artist");
@@ -20,8 +19,7 @@ const durationText = document.getElementById("duration");
 const volumeBar = document.getElementById("volume-bar");
 const volumeIcon = document.getElementById("volume-icon");
 
-// Kalau ada lagu yang dikirim dari halaman lain
-// melalui localStorage
+// Kalau ada lagu yang dikirim dari halaman lain melalui localStorage
 const savedSong = localStorage.getItem("selectedSong");
 if (savedSong === null) {
 
