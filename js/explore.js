@@ -50,6 +50,11 @@ filterButtons.forEach(button => {
             });
             showExploreSongs(filteredSongs);
         }
-
+        // Hapus active dari semua tombol
+        filterButtons.forEach(item => {
+            item.classList.remove("active");
+        });
+        // Tambahkan active ke tombol yang dipilih
+        this.classList.add("active");
     });
 });
