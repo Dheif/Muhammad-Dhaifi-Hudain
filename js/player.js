@@ -31,7 +31,6 @@ if (savedSong !== null) {
     currentSongIndex = parseInt(savedSong);
 }
 
-
 // Pastikan index tidak keluar dari data songs
 if (
     isNaN(currentSongIndex) ||
@@ -40,7 +39,6 @@ if (
 ) {
     currentSongIndex = 0;
 }
-
 
 // ========================================
 // FORMAT WAKTU
