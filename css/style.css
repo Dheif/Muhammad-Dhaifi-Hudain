@@ -321,18 +321,16 @@ body {
 
 /* EXPLORE */
 .explore-section{
-    padding: 5px 40px 30px; 
+    padding: 35px 40px 30px; 
 }
 .explore-section h1{
     font-size: 40px;
-}
-.explore-title h3{
-    font-size: 20px;
     margin: 0 0 5px;
 }
 .explore-title p{
     font-size: 18px;
     color: #687998;
+    margin: 0 0 5px;
 }
 
 /* search explore */
@@ -388,16 +386,7 @@ body {
     color: white;
 }
 
-
 /* Explore Songs */
-.explore-songs{
-    margin-top: 30px;
-}
-
-.explore-songs .section-title h2{
-    font-size: 20px;
-    margin: 0;
-}
 
 .explore-song-container{
     display: grid;
