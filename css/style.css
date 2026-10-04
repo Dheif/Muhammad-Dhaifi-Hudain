@@ -269,15 +269,16 @@ body {
     position: absolute;
     right: 8px;
     bottom: 5px;
-    width: 65px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
     border: none;
     background: transparent;
     padding: 0;
     cursor: pointer;
 }
+
 .play-button img{
-    width: 65px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
     object-fit: contain;
 }
