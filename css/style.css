@@ -9,6 +9,15 @@ body {
     color: #172b57;
 }
 
+.mobile-menu{
+    display: none;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+}
+
 /* Navbar */
 .navbar{
     height: 58px;
@@ -63,11 +72,6 @@ a{
     height: 100-px;
     object-fit: contain;
     display: block;
-}
-
-/* Hamburger */
-.hamburger {
-    display: none;
 }
 
                                                         /* HOME */

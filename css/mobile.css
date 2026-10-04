@@ -1,7 +1,7 @@
-
-/* HOME*/
+/* umum */
 .hamburger {
     display: none;
+
 }
 /* Tablet & Mobile */
 @media (max-width: 768px) {
@@ -40,6 +40,52 @@
         padding: 0;
         line-height: 1;
     }
+
+    /* Menu Mobile */
+    .mobile-menu {
+        display: none;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 58px;
+        right: 15px;
+        width: 150px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu a {
+        padding: 12px 15px;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .mobile-menu a:hover {
+        background-color: #EAF1FF;
+        border-radius: 7px;
+    }
+
+                                                                 /* home */
 /* Hero */
     .hero {
         height: 190px;
@@ -193,7 +239,7 @@
         height: 42px;
     }
 
-/* EXPLORE */
+                                                                            /* Explore */
     /* Explore Section */
     .explore-section {
         padding: 18px 22px 30px;
@@ -368,7 +414,7 @@
         height: 38px;
     }
 
-/* PLAYER*/
+                                                                    /* PLAYER*/
     .player-page {
         min-height: calc(100vh - 46px);
         height: calc(100vh - 46px);
