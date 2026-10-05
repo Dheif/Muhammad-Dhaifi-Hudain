@@ -213,7 +213,7 @@ volumeBar.addEventListener("input", function () {
         volumeIcon.src = "../img/mute.png";
         volumeIcon.alt = "Muted";
     } else {
-        volumeIcon.src = "../img/speaker.png";
+        volumeIcon.src = "../img/Speaker.png";
         volumeIcon.alt = "Volume";
     }
 
