@@ -67,7 +67,7 @@ const songs = [
         title:"Style",
         artist:"Hearth2Hearth",
         mood:"Chill",
-        cover:"../cover/style.jpg",
+        cover:"../cover/Style.jpg",
         audio:"../music/style.mp3"
     }
 ];
