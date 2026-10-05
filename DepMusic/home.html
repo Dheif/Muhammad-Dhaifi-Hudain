@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <a href="home.html">
+        <div class="logo">
+            <img src="../img/logo_depmusic.png" alt="DepMusic">
+                <span>DepMusic</span>
+        </div>
+        </a>
+        <div class="nav-menu">
+            <a href="home.html" class="active">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="player.html">Player</a>
+        </div>
+        <div class="search">
+            <img src="../img/Kaca_pembesar.png" alt="Search">
+        </div>
+
+        <button class="hamburger" type="button">☰</button>
+    </nav>
+
+    <!-- navigasi mobile-->
+     <div class="mobile-menu">
+        <a href="home.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="player.html">Player</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <p>DISCOVER YOUR SOUND</p>
+            <h1>
+                Music for<br>
+                <span>every moment.</span>
+            </h1>
+            <p class="hero-description">
+                Discover songs that match your mood<br>
+                and make your day better.
+            </p>
+            
+            <a href="explore.html">        
+            <button>
+                Explore Music →
+            </button>
+            </a>
+   
+        </div>
+    </section>
+
+    <!-- Mood -->
+    <section class="mood-section">
+        <h2>What's your mood today?</h2>
+        <p class="section-description">
+            Choose a mood and discover your sound.
+        </p>
+        <div class="mood-container">
+            <!-- Energy -->
+            <div class="mood-card energy" data-mood="Energy">
+                <img src="../img/ikon_energy.png" alt="Energy">
+                <div>
+                    <h3>Energy</h3>
+                    <p>
+                        Be productive,<br>
+                        stay motivated.
+                    </p>
+                </div>
+                <button>→</button>
+            </div>
+            <!-- Sad -->
+            <div class="mood-card sad" data-mood="Sad">
+                <img src="../img/ikon_sad.png" alt="Sad">
+                <div>
+                    <h3>Sad</h3>
+                    <p>
+                        It's okay to<br>
+                        feel it.
+                    </p>
+                </div>
+                <button>→</button>
+            </div>
+            <!-- Chill -->
+            <div class="mood-card chill" data-mood="Chill">
+                <img src="../img/ikon_chill.png" alt="Chill">
+                <div>
+                    <h3>Chill</h3>
+                    <p>
+                        Relax, breathe,<br>
+                        take it easy.
+                    </p>
+                </div>
+                <button>→</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Recommended -->
+    <section class="recomended">
+        <div class="section-title">
+            <h2 id="recomended-title">Recommended For You</h2>
+            <a href="explore.html">See All →</a>
+        </div>
+        <div class="song-container" id="song-container">
+        </div>
+    </section>
+
+    <!-- Js -->
+     <script src="../js/songs.js"></script>
+     <script src="../js/home.js"></script>
+     <script src="../js/mobile.js"></script>
+</body>
+</html>
