@@ -6,9 +6,8 @@ Pengguna dapat memilih kategori mood seperti Energy, Sad, dan Chill, kemudian me
 ## Fitur Utama
 - Rekomendasi lagu berdasarkan mood pengguna.
 - Menampilkan daftar lagu dan informasi lagu.
-- Fitur pencarian dan eksplorasi musik.
 - Music player dengan fitur Play/Pause, Previous, Next, Progress Bar, dan Volume.
 - Tampilan responsif untuk desktop dan mobile.
 
 ## Cara Menjalankan
-Buka file `home.html` melalui browser untuk menjalankan website DepMusic.
+Buka file `home.html` melalui browser untuk menjalankan website DepMusic atau mengakses tautan Live Demo yang dibagikan Dev.
