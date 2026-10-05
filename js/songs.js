@@ -25,7 +25,7 @@ const songs = [
         title:"Cinnamon Girl",
         artist:"Lana Del Rey",
         mood:"Sad",
-        cover:"../cover/Cinnamon Girl.jpg",
+        cover:"../cover/Cinnamon girl.jpg",
         audio:"../music/cinnamon girl.mp3"
     },
     {
